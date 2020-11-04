@@ -1,0 +1,57 @@
+/<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Calculator</title>
+    
+  </head>
+  <body> 
+    <div class="container">
+      <form name="display">
+        <input type="text" placeholder="0" name="result" id="result">
+      </form>
+      
+      <div class="buttons">
+          <div class="row">
+              <button class="num" id ="zero" value="0" onclick="input('0')" >0</button>
+              <button class="num" id ="one"value="1" onclick="input('1')" >1</button>
+              <button class="num" value="2" onclick="input('2')">2</button>
+              <button  id="operator" value="+" onclick="input('+')">+</button>
+          </div>
+
+          <div class="row">
+            <button class="num" value="3" onclick="input('3')">3</button>
+            <button class="num" value="4" onclick="input('4')" >4</button>
+            <button class="num" value="5" onclick="input('5')">5</button>
+            <button class="num" id="operator" value="-" onclick="input('-')">-</button>
+          </div>
+
+
+        <div class="row">
+          <button class="num" value="6" onclick="input('6')">6</button>
+          <button class="num" value="7" onclick="input('7')" >7</button>
+          <button class="num" value="8" onclick="input('8')">8</button>
+          <button class="num" id="operator" value="*" onclick="input('*')">*</button>
+        </div>
+
+      <div class="row">
+        <button class="num" value="9" onclick="input('9')">9</button>
+        <button class="num" id="clear" onclick="clearButtonClicked()">C</button>
+        <button class="num" id="operator" value="/" onclick="input('/')">/</button>
+        <button class="num total" id="total" value="=" onclick=totalButtonClicked()>=</button>
+      </div>
+          
+
+      </div>
+        
+
+    </div>
+    
+    <script src="calculator.js"></script>
+  </body>
+  
